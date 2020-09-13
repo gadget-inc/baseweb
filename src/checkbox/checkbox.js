@@ -6,6 +6,7 @@ LICENSE file in the root directory of this source tree.
 */
 // @flow
 import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import {getOverride, getOverrideProps} from '../helpers/overrides.js';
 import type {PropsT, DefaultPropsT, StatelessStateT} from './types.js';
 import {
@@ -71,39 +72,51 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
   }
 
   onMouseEnter = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isHovered: true});
-    this.props.onMouseEnter(e);
+    ReactDOM.flushSync(() => {
+      this.setState({isHovered: true});
+      this.props.onMouseEnter(e);
+    });
   };
 
   onMouseLeave = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isHovered: false, isActive: false});
-    this.props.onMouseLeave(e);
+    ReactDOM.flushSync(() => {
+      this.setState({isHovered: false, isActive: false});
+      this.props.onMouseLeave(e);
+    });
   };
 
   onMouseDown = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isActive: true});
-    this.props.onMouseDown(e);
+    ReactDOM.flushSync(() => {
+      this.setState({isActive: true});
+      this.props.onMouseDown(e);
+    });
   };
 
   onMouseUp = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isActive: false});
-    this.props.onMouseUp(e);
+    ReactDOM.flushSync(() => {
+      this.setState({isActive: false});
+      this.props.onMouseUp(e);
+    });
   };
 
   onFocus = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isFocused: true});
-    this.props.onFocus(e);
-    if (isFocusVisible(e)) {
-      this.setState({isFocusVisible: true});
-    }
+    ReactDOM.flushSync(() => {
+      this.setState({isFocused: true});
+      this.props.onFocus(e);
+      if (isFocusVisible(e)) {
+        this.setState({isFocusVisible: true});
+      }
+    });
   };
 
   onBlur = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isFocused: false});
-    this.props.onBlur(e);
-    if (this.state.isFocusVisible !== false) {
-      this.setState({isFocusVisible: false});
-    }
+    ReactDOM.flushSync(() => {
+      this.setState({isFocused: false});
+      this.props.onBlur(e);
+      if (this.state.isFocusVisible !== false) {
+        this.setState({isFocusVisible: false});
+      }
+    });
   };
 
   isToggle = () => {
