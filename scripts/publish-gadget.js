@@ -11,4 +11,6 @@ LICENSE file in the root directory of this source tree.
 // @flow
 
 const publishToNpm = require('./publish-to-npm.js');
-publishToNpm({tag: 'latest'});
+const result = require('child_process').execSync('git rev-parse --short HEAD', {encoding: 'utf-8'});
+
+publishToNpm({tag: 'alpha', commit: result.trim()});

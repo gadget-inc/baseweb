@@ -24,21 +24,6 @@ const ESLINT_PLUGIN_DIR = path.resolve(
 const ALPHA_TAG = 'alpha';
 const LATEST_TAG = 'latest';
 
-function writeNpmTokenFromEnv() {
-  const token = process.env.NPM_TOKEN;
-  if (!token) {
-    throw new Error('NPM_TOKEN not found.');
-  }
-  const filepath = path.resolve(ROOT_DIR, '.npmrc');
-  const filePathEslintPlugin = path.resolve(ESLINT_PLUGIN_DIR, '.npmrc');
-  fs.unlinkSync(filepath);
-  fs.writeFileSync(filepath, `//registry.npmjs.org/:_authToken=${token}`);
-  fs.writeFileSync(
-    filePathEslintPlugin,
-    `//registry.npmjs.org/:_authToken=${token}`,
-  );
-}
-
 function readJSONFile(filepath) {
   const contents = fs.readFileSync(filepath, 'utf8');
   return JSON.parse(contents);
@@ -57,7 +42,7 @@ function copyPackageJSONVersionFromRoot(filepath) {
 }
 
 function publishBaseui(tag) {
-  console.log('--- Publishing baseui to NPM');
+  console.log('--- Publishing gadget baseui to NPM');
   spawnSync('yarn', ['build'], {stdio: 'inherit', cwd: ROOT_DIR});
   spawnSync('npm', ['publish', 'dist', '--tag', tag], {
     stdio: ['inherit', 'inherit', 'pipe'],
@@ -103,7 +88,6 @@ module.exports = function publishToNpm(params /*: any */) {
     fs.writeFileSync(rootPackageJSONPath, JSON.stringify(packageJSON, null, 2));
   }
 
-  writeNpmTokenFromEnv();
   publishBaseui(tag);
   publishEslintPlugin(tag);
 

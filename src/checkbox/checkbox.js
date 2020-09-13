@@ -6,6 +6,7 @@ LICENSE file in the root directory of this source tree.
 */
 // @flow
 import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import {getOverride, getOverrideProps} from '../helpers/overrides.js';
 import type {PropsT, DefaultPropsT, StatelessStateT} from './types.js';
 import {
@@ -91,19 +92,23 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
   };
 
   onFocus = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isFocused: true});
-    this.props.onFocus(e);
-    if (isFocusVisible(e)) {
-      this.setState({isFocusVisible: true});
-    }
+    ReactDOM.flushSync(() => {
+      this.setState({isFocused: true});
+      this.props.onFocus(e);
+      if (isFocusVisible(e)) {
+        this.setState({isFocusVisible: true});
+      }
+    });
   };
 
   onBlur = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    this.setState({isFocused: false});
-    this.props.onBlur(e);
-    if (this.state.isFocusVisible !== false) {
-      this.setState({isFocusVisible: false});
-    }
+    ReactDOM.flushSync(() => {
+      this.setState({isFocused: false});
+      this.props.onBlur(e);
+      if (this.state.isFocusVisible !== false) {
+        this.setState({isFocusVisible: false});
+      }
+    });
   };
 
   isToggle = () => {
