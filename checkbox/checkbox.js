@@ -69,36 +69,44 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "onMouseEnter", function (e) {
-      _this.setState({
-        isHovered: true
-      });
+      ReactDOM.flushSync(function () {
+        _this.setState({
+          isHovered: true
+        });
 
-      _this.props.onMouseEnter(e);
+        _this.props.onMouseEnter(e);
+      });
     });
 
     _defineProperty(_assertThisInitialized(_this), "onMouseLeave", function (e) {
-      _this.setState({
-        isHovered: false,
-        isActive: false
-      });
+      ReactDOM.flushSync(function () {
+        _this.setState({
+          isHovered: false,
+          isActive: false
+        });
 
-      _this.props.onMouseLeave(e);
+        _this.props.onMouseLeave(e);
+      });
     });
 
     _defineProperty(_assertThisInitialized(_this), "onMouseDown", function (e) {
-      _this.setState({
-        isActive: true
-      });
+      ReactDOM.flushSync(function () {
+        _this.setState({
+          isActive: true
+        });
 
-      _this.props.onMouseDown(e);
+        _this.props.onMouseDown(e);
+      });
     });
 
     _defineProperty(_assertThisInitialized(_this), "onMouseUp", function (e) {
-      _this.setState({
-        isActive: false
-      });
+      ReactDOM.flushSync(function () {
+        _this.setState({
+          isActive: false
+        });
 
-      _this.props.onMouseUp(e);
+        _this.props.onMouseUp(e);
+      });
     });
 
     _defineProperty(_assertThisInitialized(_this), "onFocus", function (e) {

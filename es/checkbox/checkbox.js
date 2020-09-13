@@ -27,32 +27,40 @@ class StatelessCheckbox extends React.Component {
     });
 
     _defineProperty(this, "onMouseEnter", e => {
-      this.setState({
-        isHovered: true
+      ReactDOM.flushSync(() => {
+        this.setState({
+          isHovered: true
+        });
+        this.props.onMouseEnter(e);
       });
-      this.props.onMouseEnter(e);
     });
 
     _defineProperty(this, "onMouseLeave", e => {
-      this.setState({
-        isHovered: false,
-        isActive: false
+      ReactDOM.flushSync(() => {
+        this.setState({
+          isHovered: false,
+          isActive: false
+        });
+        this.props.onMouseLeave(e);
       });
-      this.props.onMouseLeave(e);
     });
 
     _defineProperty(this, "onMouseDown", e => {
-      this.setState({
-        isActive: true
+      ReactDOM.flushSync(() => {
+        this.setState({
+          isActive: true
+        });
+        this.props.onMouseDown(e);
       });
-      this.props.onMouseDown(e);
     });
 
     _defineProperty(this, "onMouseUp", e => {
-      this.setState({
-        isActive: false
+      ReactDOM.flushSync(() => {
+        this.setState({
+          isActive: false
+        });
+        this.props.onMouseUp(e);
       });
-      this.props.onMouseUp(e);
     });
 
     _defineProperty(this, "onFocus", e => {
