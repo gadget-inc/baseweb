@@ -1,6 +1,6 @@
 {
-  "name": "@gadget-inc/baseui",
-  "version": "0.0.0-alpha-17cdfd3",
+  "name": "baseui",
+  "version": "9.99.0",
   "description": "A React Component library implementing the Base design language",
   "keywords": [
     "react",

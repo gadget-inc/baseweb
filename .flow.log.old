@@ -1,0 +1,824 @@
+[2020-06-06 08:41:21.639] argv=/Users/airhorns/Code/baseweb/node_modules/flow-bin/flow-osx-v0.110.0/flow start --flowconfig-name .flowconfig --autostop --from vscode --temp-dir /tmp/flow /Users/airhorns/Code/baseweb
+[2020-06-06 08:41:21.639] lazy_mode=off
+[2020-06-06 08:41:21.639] arch=classic
+[2020-06-06 08:41:21.639] abstract_locations=off
+[2020-06-06 08:41:21.639] max_workers=12
+[2020-06-06 08:41:21.720] Initializing Server (This might take some time)
+[2020-06-06 08:41:21.721] executable=/Users/airhorns/Code/baseweb/node_modules/flow-bin/flow-osx-v0.110.0/flow
+[2020-06-06 08:41:21.721] version=0.110.0
+[2020-06-06 08:41:21.748] No saved state available
+[2020-06-06 08:41:21.759] Parsing
+[2020-06-06 08:41:23.733] [flow serverWorker 6] File /Users/airhorns/Code/baseweb/node_modules/map-or-similar/map-or-similar.min.gzip.js is malformed
+[2020-06-06 08:41:34.359] [flow serverWorker 7] File /Users/airhorns/Code/baseweb/node_modules/memoizerific/memoizerific.min.gzip.js is malformed
+[2020-06-06 08:41:42.836] Building package heap
+[2020-06-06 08:41:43.228] Loading libraries
+[2020-06-06 08:41:45.084] Resolving dependencies
+[2020-06-06 08:41:46.906] Resolved requires changed
+[2020-06-06 08:41:47.102] to_merge: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:41:47.102] Calculating dependencies
+[2020-06-06 08:41:47.110] Merging
+[2020-06-06 08:42:05.155] Merge skipped 0 of 2819 modules
+[2020-06-06 08:42:05.160] Done
+[2020-06-06 08:42:05.160] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:42:05.162] Server is READY
+[2020-06-06 08:42:05.162] Took 43.442120 seconds to initialize.
+[2020-06-06 08:42:05.175] recheck 1 modified, 0 deleted files
+[2020-06-06 08:42:05.175] modified files:
+[2020-06-06 08:42:05.175] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:05.175] Parsing
+[2020-06-06 08:42:05.185] Resolved requires are unchanged
+[2020-06-06 08:42:05.185] Re-resolving directly dependent files
+[2020-06-06 08:42:05.185] Resolved requires are unchanged
+[2020-06-06 08:42:05.185] Recalculating dependency graph
+[2020-06-06 08:42:05.202] Merge prep
+[2020-06-06 08:42:05.202] to_merge: Focused: 0, Dependents: 0, Dependencies: 0
+[2020-06-06 08:42:05.202] Calculating dependencies
+[2020-06-06 08:42:05.202] Merging
+[2020-06-06 08:42:05.202] Merge skipped 0 of 0 modules
+[2020-06-06 08:42:05.202] Done
+[2020-06-06 08:42:05.202] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:42:05.622] Adding new persistent connection #1
+[2020-06-06 08:42:05.622] Running a serial workload
+[2020-06-06 08:42:05.622] Persistent request: subscribe
+[2020-06-06 08:42:05.626] Subscribing client #1 to push diagnostics
+[2020-06-06 08:42:05.626] Persistent response: lspFromServer None
+[2020-06-06 08:42:05.626] Client #1 opened /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:05.626] Running a serial workload
+[2020-06-06 08:42:05.626] Persistent request: lspToServer textDocument/didOpen
+[2020-06-06 08:42:05.626] Persistent response: lspFromServer None
+[2020-06-06 08:42:05.626] Running a serial workload
+[2020-06-06 08:42:05.626] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:05.646] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:05.647] Running a serial workload
+[2020-06-06 08:42:05.647] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:42:05.669] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:42:08.817] Running a serial workload
+[2020-06-06 08:42:08.817] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:08.850] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:08.850] Running a serial workload
+[2020-06-06 08:42:08.850] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:08.850] Persistent response: lspFromServer None
+[2020-06-06 08:42:08.850] Running a serial workload
+[2020-06-06 08:42:08.850] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:08.880] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:08.916] Running a serial workload
+[2020-06-06 08:42:08.916] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:08.942] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:08.949] Running a serial workload
+[2020-06-06 08:42:08.949] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:08.972] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:08.985] Running a serial workload
+[2020-06-06 08:42:08.985] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.012] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.018] Running a serial workload
+[2020-06-06 08:42:09.018] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.076] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.076] Running a serial workload
+[2020-06-06 08:42:09.076] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.076] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.077] Running a serial workload
+[2020-06-06 08:42:09.077] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.130] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.130] Running a serial workload
+[2020-06-06 08:42:09.130] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.130] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.130] Running a serial workload
+[2020-06-06 08:42:09.130] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.130] Skipping canceled persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.130] Persistent response: lspFromServer ERROR/cancelled
+[2020-06-06 08:42:09.130] Running a serial workload
+[2020-06-06 08:42:09.130] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.131] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.131] Running a serial workload
+[2020-06-06 08:42:09.131] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.178] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.178] Running a serial workload
+[2020-06-06 08:42:09.178] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.178] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.187] Running a serial workload
+[2020-06-06 08:42:09.187] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.217] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.225] Running a serial workload
+[2020-06-06 08:42:09.225] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.256] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.267] Running a serial workload
+[2020-06-06 08:42:09.267] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.293] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.293] Running a serial workload
+[2020-06-06 08:42:09.293] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.293] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.293] Running a serial workload
+[2020-06-06 08:42:09.293] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.314] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.321] Running a serial workload
+[2020-06-06 08:42:09.321] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.341] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.353] Running a serial workload
+[2020-06-06 08:42:09.353] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.374] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.391] Running a serial workload
+[2020-06-06 08:42:09.391] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.411] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.419] Running a serial workload
+[2020-06-06 08:42:09.419] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.440] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.522] Running a serial workload
+[2020-06-06 08:42:09.522] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.543] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.587] Running a serial workload
+[2020-06-06 08:42:09.587] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.627] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.627] Running a serial workload
+[2020-06-06 08:42:09.627] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.627] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.627] Running a serial workload
+[2020-06-06 08:42:09.627] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.664] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.665] Running a serial workload
+[2020-06-06 08:42:09.665] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.665] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.665] Running a serial workload
+[2020-06-06 08:42:09.665] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.698] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.699] Running a serial workload
+[2020-06-06 08:42:09.699] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.699] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.699] Running a serial workload
+[2020-06-06 08:42:09.699] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.735] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.735] Running a serial workload
+[2020-06-06 08:42:09.735] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.735] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.735] Running a serial workload
+[2020-06-06 08:42:09.735] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.771] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.772] Running a serial workload
+[2020-06-06 08:42:09.772] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:42:09.772] Persistent response: lspFromServer None
+[2020-06-06 08:42:09.866] Running a serial workload
+[2020-06-06 08:42:09.866] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.887] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:09.890] Running a serial workload
+[2020-06-06 08:42:09.890] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:09.911] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:10.433] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:42:10.433] Persistent response: lspFromServer None
+[2020-06-06 08:42:10.433] Running a serial workload
+[2020-06-06 08:42:10.433] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:10.457] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:10.677] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:42:10.677] Persistent response: lspFromServer None
+[2020-06-06 08:42:10.680] Running a parallel workload
+[2020-06-06 08:42:10.680] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:10.701] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:10.701] Running a parallel workload
+[2020-06-06 08:42:10.701] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:42:10.722] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:42:10.723] recheck 1 modified, 0 deleted files
+[2020-06-06 08:42:10.723] modified files:
+[2020-06-06 08:42:10.723] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:10.723] Parsing
+[2020-06-06 08:42:10.750] Resolved requires are unchanged
+[2020-06-06 08:42:10.776] Re-resolving directly dependent files
+[2020-06-06 08:42:10.776] Resolved requires are unchanged
+[2020-06-06 08:42:10.776] Recalculating dependency graph
+[2020-06-06 08:42:10.796] Merge prep
+[2020-06-06 08:42:10.796] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:42:10.796] Calculating dependencies
+[2020-06-06 08:42:10.797] Merging
+[2020-06-06 08:42:10.859] Merge skipped 0 of 1 modules
+[2020-06-06 08:42:10.859] Done
+[2020-06-06 08:42:10.860] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:42:10.865] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:42:19.514] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:42:19.514] Persistent response: lspFromServer None
+[2020-06-06 08:42:19.517] Running a parallel workload
+[2020-06-06 08:42:19.517] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:19.541] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:19.541] Running a parallel workload
+[2020-06-06 08:42:19.541] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:42:19.561] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:42:19.561] recheck 1 modified, 0 deleted files
+[2020-06-06 08:42:19.561] modified files:
+[2020-06-06 08:42:19.561] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:19.561] Parsing
+[2020-06-06 08:42:19.570] Resolved requires are unchanged
+[2020-06-06 08:42:19.570] Re-resolving directly dependent files
+[2020-06-06 08:42:19.570] Resolved requires are unchanged
+[2020-06-06 08:42:19.570] Recalculating dependency graph
+[2020-06-06 08:42:19.594] Merge prep
+[2020-06-06 08:42:19.594] to_merge: Focused: 0, Dependents: 0, Dependencies: 0
+[2020-06-06 08:42:19.594] Calculating dependencies
+[2020-06-06 08:42:19.594] Merging
+[2020-06-06 08:42:19.594] Merge skipped 0 of 0 modules
+[2020-06-06 08:42:19.594] Done
+[2020-06-06 08:42:19.594] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:42:19.600] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:42:29.386] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:42:29.386] Persistent response: lspFromServer None
+[2020-06-06 08:42:29.389] Running a parallel workload
+[2020-06-06 08:42:29.389] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:29.420] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:29.420] recheck 1 modified, 0 deleted files
+[2020-06-06 08:42:29.420] modified files:
+[2020-06-06 08:42:29.420] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:29.420] Parsing
+[2020-06-06 08:42:29.421] Running a parallel workload
+[2020-06-06 08:42:29.421] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:42:29.450] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:42:29.472] Resolved requires are unchanged
+[2020-06-06 08:42:29.472] Re-resolving directly dependent files
+[2020-06-06 08:42:29.472] Resolved requires are unchanged
+[2020-06-06 08:42:29.472] Recalculating dependency graph
+[2020-06-06 08:42:29.501] Merge prep
+[2020-06-06 08:42:29.501] to_merge: Focused: 0, Dependents: 0, Dependencies: 0
+[2020-06-06 08:42:29.501] Calculating dependencies
+[2020-06-06 08:42:29.501] Merging
+[2020-06-06 08:42:29.501] Merge skipped 0 of 0 modules
+[2020-06-06 08:42:29.502] Done
+[2020-06-06 08:42:29.502] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:42:29.510] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:42:41.563] Running a serial workload
+[2020-06-06 08:42:41.563] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:41.626] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:42.072] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:42:42.072] Persistent response: lspFromServer None
+[2020-06-06 08:42:42.076] Running a parallel workload
+[2020-06-06 08:42:42.076] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:42.114] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:42.114] Running a parallel workload
+[2020-06-06 08:42:42.114] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:42:42.147] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:42:42.147] recheck 1 modified, 0 deleted files
+[2020-06-06 08:42:42.147] modified files:
+[2020-06-06 08:42:42.147] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:42.147] Parsing
+[2020-06-06 08:42:42.173] Resolved requires are unchanged
+[2020-06-06 08:42:42.173] Re-resolving directly dependent files
+[2020-06-06 08:42:42.173] Resolved requires are unchanged
+[2020-06-06 08:42:42.173] Recalculating dependency graph
+[2020-06-06 08:42:42.198] Merge prep
+[2020-06-06 08:42:42.198] to_merge: Focused: 0, Dependents: 0, Dependencies: 0
+[2020-06-06 08:42:42.198] Calculating dependencies
+[2020-06-06 08:42:42.198] Merging
+[2020-06-06 08:42:42.198] Merge skipped 0 of 0 modules
+[2020-06-06 08:42:42.198] Done
+[2020-06-06 08:42:42.198] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:42:42.205] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:42:49.639] Running a serial workload
+[2020-06-06 08:42:49.639] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:49.669] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:49.832] Running a serial workload
+[2020-06-06 08:42:49.832] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:49.855] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:50.464] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:42:50.465] Persistent response: lspFromServer None
+[2020-06-06 08:42:50.465] Running a serial workload
+[2020-06-06 08:42:50.465] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:50.491] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:50.626] Running a serial workload
+[2020-06-06 08:42:50.626] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:42:50.649] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:42:50.700] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:42:50.700] Persistent response: lspFromServer None
+[2020-06-06 08:42:50.705] Running a parallel workload
+[2020-06-06 08:42:50.705] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:50.733] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:50.733] Running a parallel workload
+[2020-06-06 08:42:50.733] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:42:50.764] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:42:50.764] recheck 1 modified, 0 deleted files
+[2020-06-06 08:42:50.764] modified files:
+[2020-06-06 08:42:50.764] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:42:50.764] Parsing
+[2020-06-06 08:42:50.794] Resolved requires are unchanged
+[2020-06-06 08:42:50.794] Re-resolving directly dependent files
+[2020-06-06 08:42:50.794] Resolved requires are unchanged
+[2020-06-06 08:42:50.794] Recalculating dependency graph
+[2020-06-06 08:42:50.821] Merge prep
+[2020-06-06 08:42:50.821] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:42:50.821] Calculating dependencies
+[2020-06-06 08:42:50.821] Merging
+[2020-06-06 08:42:50.898] Merge skipped 0 of 1 modules
+[2020-06-06 08:42:50.898] Done
+[2020-06-06 08:42:50.899] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:42:50.906] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:43:25.544] Running a serial workload
+[2020-06-06 08:43:25.544] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:43:25.572] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:43:26.204] Running a serial workload
+[2020-06-06 08:43:26.204] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:43:26.226] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:43:26.998] Running a serial workload
+[2020-06-06 08:43:26.998] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:43:27.041] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:43:27.202] Running a serial workload
+[2020-06-06 08:43:27.202] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:43:27.226] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:43:27.597] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:43:27.597] Persistent response: lspFromServer None
+[2020-06-06 08:43:27.597] Running a serial workload
+[2020-06-06 08:43:27.597] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:27.624] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:27.734] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:43:27.734] Persistent response: lspFromServer None
+[2020-06-06 08:43:27.739] Running a parallel workload
+[2020-06-06 08:43:27.739] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:27.762] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:27.762] Running a parallel workload
+[2020-06-06 08:43:27.762] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:43:27.785] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:43:27.785] recheck 1 modified, 0 deleted files
+[2020-06-06 08:43:27.785] modified files:
+[2020-06-06 08:43:27.785] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:27.785] Parsing
+[2020-06-06 08:43:27.822] Resolved requires are unchanged
+[2020-06-06 08:43:27.822] Re-resolving directly dependent files
+[2020-06-06 08:43:27.822] Resolved requires are unchanged
+[2020-06-06 08:43:27.822] Recalculating dependency graph
+[2020-06-06 08:43:27.844] Merge prep
+[2020-06-06 08:43:27.844] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:43:27.844] Calculating dependencies
+[2020-06-06 08:43:27.844] Merging
+[2020-06-06 08:43:27.911] Merge skipped 0 of 1 modules
+[2020-06-06 08:43:27.911] Done
+[2020-06-06 08:43:27.911] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:43:27.917] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:43:39.287] Running a serial workload
+[2020-06-06 08:43:39.287] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:43:39.309] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:43:39.672] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:43:39.672] Persistent response: lspFromServer None
+[2020-06-06 08:43:39.672] Running a serial workload
+[2020-06-06 08:43:39.672] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:39.698] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:39.895] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:43:39.895] Persistent response: lspFromServer None
+[2020-06-06 08:43:39.899] Running a parallel workload
+[2020-06-06 08:43:39.899] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:39.922] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:39.922] Running a parallel workload
+[2020-06-06 08:43:39.922] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:43:39.954] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:43:39.954] recheck 1 modified, 0 deleted files
+[2020-06-06 08:43:39.954] modified files:
+[2020-06-06 08:43:39.954] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:39.954] Parsing
+[2020-06-06 08:43:39.986] Resolved requires are unchanged
+[2020-06-06 08:43:39.986] Re-resolving directly dependent files
+[2020-06-06 08:43:39.986] Resolved requires are unchanged
+[2020-06-06 08:43:39.986] Recalculating dependency graph
+[2020-06-06 08:43:40.009] Merge prep
+[2020-06-06 08:43:40.009] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:43:40.009] Calculating dependencies
+[2020-06-06 08:43:40.010] Merging
+[2020-06-06 08:43:40.073] Merge skipped 0 of 1 modules
+[2020-06-06 08:43:40.073] Done
+[2020-06-06 08:43:40.074] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:43:40.080] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:43:42.288] Running a serial workload
+[2020-06-06 08:43:42.288] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:43:42.312] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:43:42.489] Running a serial workload
+[2020-06-06 08:43:42.489] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:43:42.511] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:43:58.621] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:43:58.621] Persistent response: lspFromServer None
+[2020-06-06 08:43:58.624] Running a parallel workload
+[2020-06-06 08:43:58.624] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:58.648] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:58.648] Running a parallel workload
+[2020-06-06 08:43:58.648] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:43:58.677] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:43:58.678] recheck 1 modified, 0 deleted files
+[2020-06-06 08:43:58.678] modified files:
+[2020-06-06 08:43:58.678] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:43:58.678] Parsing
+[2020-06-06 08:43:58.704] Resolved requires are unchanged
+[2020-06-06 08:43:58.704] Re-resolving directly dependent files
+[2020-06-06 08:43:58.704] Resolved requires are unchanged
+[2020-06-06 08:43:58.704] Recalculating dependency graph
+[2020-06-06 08:43:58.729] Merge prep
+[2020-06-06 08:43:58.729] to_merge: Focused: 0, Dependents: 0, Dependencies: 0
+[2020-06-06 08:43:58.729] Calculating dependencies
+[2020-06-06 08:43:58.729] Merging
+[2020-06-06 08:43:58.729] Merge skipped 0 of 0 modules
+[2020-06-06 08:43:58.729] Done
+[2020-06-06 08:43:58.729] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:43:58.735] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:44:47.518] Running a serial workload
+[2020-06-06 08:44:47.518] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:44:47.548] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:44:47.577] Running a serial workload
+[2020-06-06 08:44:47.577] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:44:47.577] Persistent response: lspFromServer None
+[2020-06-06 08:44:49.254] Running a serial workload
+[2020-06-06 08:44:49.254] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:49.287] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:50.399] Running a serial workload
+[2020-06-06 08:44:50.399] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:50.436] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:50.511] Running a serial workload
+[2020-06-06 08:44:50.511] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:50.567] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:50.656] Running a serial workload
+[2020-06-06 08:44:50.657] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:50.684] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:50.807] Running a serial workload
+[2020-06-06 08:44:50.807] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:50.834] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:51.768] Running a serial workload
+[2020-06-06 08:44:51.768] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:51.796] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:51.961] Running a serial workload
+[2020-06-06 08:44:51.961] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:52.008] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:52.158] Running a serial workload
+[2020-06-06 08:44:52.158] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:52.180] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:52.623] Running a serial workload
+[2020-06-06 08:44:52.623] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:52.664] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:54.264] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:54.264] Persistent response: lspFromServer None
+[2020-06-06 08:44:54.264] Running a serial workload
+[2020-06-06 08:44:54.264] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.288] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.367] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:54.367] Persistent response: lspFromServer None
+[2020-06-06 08:44:54.367] Running a serial workload
+[2020-06-06 08:44:54.367] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.397] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.442] Running a serial workload
+[2020-06-06 08:44:54.442] Persistent request: lspToServer textDocument/completion
+[2020-06-06 08:44:54.479] Persistent response: lspFromServer textDocument/completion
+[2020-06-06 08:44:54.479] Running a serial workload
+[2020-06-06 08:44:54.479] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:54.504] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:54.549] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:54.549] Persistent response: lspFromServer None
+[2020-06-06 08:44:54.549] Running a serial workload
+[2020-06-06 08:44:54.549] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.589] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.589] Running a serial workload
+[2020-06-06 08:44:54.589] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:54.625] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:54.669] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:54.669] Persistent response: lspFromServer None
+[2020-06-06 08:44:54.669] Running a serial workload
+[2020-06-06 08:44:54.669] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.697] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.697] Running a serial workload
+[2020-06-06 08:44:54.698] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:54.722] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:54.777] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:54.777] Persistent response: lspFromServer None
+[2020-06-06 08:44:54.777] Running a serial workload
+[2020-06-06 08:44:54.777] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.807] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:54.893] Running a serial workload
+[2020-06-06 08:44:54.893] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:54.915] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:55.518] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:55.518] Persistent response: lspFromServer None
+[2020-06-06 08:44:55.518] Running a serial workload
+[2020-06-06 08:44:55.518] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.543] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.610] Running a serial workload
+[2020-06-06 08:44:55.610] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:55.643] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:55.643] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:55.644] Persistent response: lspFromServer None
+[2020-06-06 08:44:55.644] Running a serial workload
+[2020-06-06 08:44:55.644] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.675] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.675] Running a serial workload
+[2020-06-06 08:44:55.675] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:44:55.675] Persistent response: lspFromServer None
+[2020-06-06 08:44:55.682] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:55.682] Persistent response: lspFromServer None
+[2020-06-06 08:44:55.683] Running a serial workload
+[2020-06-06 08:44:55.683] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:55.715] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:55.715] Running a serial workload
+[2020-06-06 08:44:55.715] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.742] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.742] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:55.743] Persistent response: lspFromServer None
+[2020-06-06 08:44:55.743] Running a serial workload
+[2020-06-06 08:44:55.743] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.774] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.774] Running a serial workload
+[2020-06-06 08:44:55.774] Persistent request: lspToServer textDocument/completion
+[2020-06-06 08:44:55.803] Persistent response: lspFromServer textDocument/completion
+[2020-06-06 08:44:55.803] Running a serial workload
+[2020-06-06 08:44:55.803] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:44:55.803] Persistent response: lspFromServer None
+[2020-06-06 08:44:55.914] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:55.914] Persistent response: lspFromServer None
+[2020-06-06 08:44:55.914] Running a serial workload
+[2020-06-06 08:44:55.914] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.943] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:55.943] Running a serial workload
+[2020-06-06 08:44:55.943] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:55.972] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.062] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.063] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.063] Running a serial workload
+[2020-06-06 08:44:56.063] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.088] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.088] Running a serial workload
+[2020-06-06 08:44:56.088] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.117] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.165] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.165] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.166] Running a serial workload
+[2020-06-06 08:44:56.166] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.194] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.194] Running a serial workload
+[2020-06-06 08:44:56.194] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.241] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.285] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.286] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.286] Running a serial workload
+[2020-06-06 08:44:56.286] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.311] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.448] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.448] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.448] Running a serial workload
+[2020-06-06 08:44:56.448] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.479] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.479] Running a serial workload
+[2020-06-06 08:44:56.479] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.513] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.575] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.575] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.575] Running a serial workload
+[2020-06-06 08:44:56.575] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.609] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.609] Running a serial workload
+[2020-06-06 08:44:56.609] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.645] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.645] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.645] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.645] Running a serial workload
+[2020-06-06 08:44:56.645] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:44:56.645] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.645] Running a serial workload
+[2020-06-06 08:44:56.645] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.672] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.672] Running a serial workload
+[2020-06-06 08:44:56.672] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.714] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.714] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.714] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.714] Running a serial workload
+[2020-06-06 08:44:56.714] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:44:56.714] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.714] Running a serial workload
+[2020-06-06 08:44:56.714] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.754] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.754] Running a serial workload
+[2020-06-06 08:44:56.754] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.792] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.813] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.813] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.813] Running a serial workload
+[2020-06-06 08:44:56.813] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.849] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.849] Running a serial workload
+[2020-06-06 08:44:56.849] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.892] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:56.927] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.927] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.927] Running a serial workload
+[2020-06-06 08:44:56.927] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.970] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:56.970] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:56.970] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.972] Running a serial workload
+[2020-06-06 08:44:56.972] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.972] Skipping canceled persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:56.972] Persistent response: lspFromServer ERROR/cancelled
+[2020-06-06 08:44:56.972] Running a serial workload
+[2020-06-06 08:44:56.972] Persistent request: lspToServer $/cancelRequest
+[2020-06-06 08:44:56.972] Persistent response: lspFromServer None
+[2020-06-06 08:44:56.972] Running a serial workload
+[2020-06-06 08:44:56.972] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:57.018] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:57.023] Running a serial workload
+[2020-06-06 08:44:57.023] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:44:57.071] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:44:57.126] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:44:57.126] Persistent response: lspFromServer None
+[2020-06-06 08:44:57.126] Running a serial workload
+[2020-06-06 08:44:57.126] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:57.130] Persistent response: liveErrorsResponse OK (1 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:44:57.131] Running a serial workload
+[2020-06-06 08:44:57.131] Persistent request: lspToServer textDocument/completion
+[2020-06-06 08:44:57.156] Persistent response: lspFromServer textDocument/completion
+[2020-06-06 08:45:01.958] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:45:01.959] Persistent response: lspFromServer None
+[2020-06-06 08:45:01.959] Running a serial workload
+[2020-06-06 08:45:01.959] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:01.983] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:04.799] Running a serial workload
+[2020-06-06 08:45:04.799] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:45:04.841] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:45:04.957] Running a serial workload
+[2020-06-06 08:45:04.957] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:45:04.997] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:45:05.661] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:45:05.661] Persistent response: lspFromServer None
+[2020-06-06 08:45:05.665] Running a parallel workload
+[2020-06-06 08:45:05.665] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:05.688] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:05.688] Running a parallel workload
+[2020-06-06 08:45:05.688] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:45:05.712] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:45:05.712] recheck 1 modified, 0 deleted files
+[2020-06-06 08:45:05.712] modified files:
+[2020-06-06 08:45:05.712] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:05.712] Parsing
+[2020-06-06 08:45:05.739] Resolved requires are unchanged
+[2020-06-06 08:45:05.739] Re-resolving directly dependent files
+[2020-06-06 08:45:05.739] Resolved requires are unchanged
+[2020-06-06 08:45:05.739] Recalculating dependency graph
+[2020-06-06 08:45:05.762] Merge prep
+[2020-06-06 08:45:05.762] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:45:05.762] Calculating dependencies
+[2020-06-06 08:45:05.762] Merging
+[2020-06-06 08:45:05.831] Merge skipped 0 of 1 modules
+[2020-06-06 08:45:05.831] Done
+[2020-06-06 08:45:05.831] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:45:05.838] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:45:06.167] Running a serial workload
+[2020-06-06 08:45:06.167] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:45:06.214] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:45:06.408] Running a serial workload
+[2020-06-06 08:45:06.408] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:45:06.449] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:45:06.795] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:45:06.795] Persistent response: lspFromServer None
+[2020-06-06 08:45:06.795] Running a serial workload
+[2020-06-06 08:45:06.795] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:06.823] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:07.076] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:45:07.076] Persistent response: lspFromServer None
+[2020-06-06 08:45:07.079] Running a parallel workload
+[2020-06-06 08:45:07.079] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:07.106] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:07.106] Running a parallel workload
+[2020-06-06 08:45:07.106] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:45:07.130] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:45:07.130] recheck 1 modified, 0 deleted files
+[2020-06-06 08:45:07.130] modified files:
+[2020-06-06 08:45:07.130] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:07.130] Parsing
+[2020-06-06 08:45:07.164] Resolved requires are unchanged
+[2020-06-06 08:45:07.165] Re-resolving directly dependent files
+[2020-06-06 08:45:07.165] Resolved requires are unchanged
+[2020-06-06 08:45:07.165] Recalculating dependency graph
+[2020-06-06 08:45:07.187] Merge prep
+[2020-06-06 08:45:07.187] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:45:07.187] Calculating dependencies
+[2020-06-06 08:45:07.187] Merging
+[2020-06-06 08:45:07.253] Merge skipped 0 of 1 modules
+[2020-06-06 08:45:07.253] Done
+[2020-06-06 08:45:07.253] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:45:07.260] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:45:50.430] Running a serial workload
+[2020-06-06 08:45:50.431] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:45:50.456] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:45:57.160] Running a serial workload
+[2020-06-06 08:45:57.160] Persistent request: lspToServer textDocument/hover
+[2020-06-06 08:45:57.183] Persistent response: lspFromServer textDocument/hover
+[2020-06-06 08:45:57.313] Running a serial workload
+[2020-06-06 08:45:57.313] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:45:57.337] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:45:57.928] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:45:57.928] Persistent response: lspFromServer None
+[2020-06-06 08:45:57.928] Running a serial workload
+[2020-06-06 08:45:57.929] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:57.952] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:57.953] Running a serial workload
+[2020-06-06 08:45:57.953] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:45:57.977] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:45:58.090] Running a serial workload
+[2020-06-06 08:45:58.090] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:45:58.112] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:45:58.253] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:45:58.253] Persistent response: lspFromServer None
+[2020-06-06 08:45:58.257] Running a parallel workload
+[2020-06-06 08:45:58.257] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:58.284] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:58.284] Running a parallel workload
+[2020-06-06 08:45:58.284] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:45:58.310] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:45:58.310] recheck 1 modified, 0 deleted files
+[2020-06-06 08:45:58.310] modified files:
+[2020-06-06 08:45:58.310] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:45:58.310] Parsing
+[2020-06-06 08:45:58.351] Resolved requires are unchanged
+[2020-06-06 08:45:58.352] Re-resolving directly dependent files
+[2020-06-06 08:45:58.352] Resolved requires are unchanged
+[2020-06-06 08:45:58.352] Recalculating dependency graph
+[2020-06-06 08:45:58.384] Merge prep
+[2020-06-06 08:45:58.384] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:45:58.384] Calculating dependencies
+[2020-06-06 08:45:58.384] Merging
+[2020-06-06 08:45:58.447] Merge skipped 0 of 1 modules
+[2020-06-06 08:45:58.447] Done
+[2020-06-06 08:45:58.448] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:45:58.459] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:46:29.084] Running a serial workload
+[2020-06-06 08:46:29.084] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:46:29.124] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:46:29.133] Running a serial workload
+[2020-06-06 08:46:29.133] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:46:29.161] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:46:52.389] Running a serial workload
+[2020-06-06 08:46:52.389] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:46:52.422] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:46:52.826] Running a serial workload
+[2020-06-06 08:46:52.827] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:46:52.859] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:46:53.247] Running a serial workload
+[2020-06-06 08:46:53.247] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:46:53.279] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:46:53.627] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:46:53.628] Persistent response: lspFromServer None
+[2020-06-06 08:46:53.628] Running a serial workload
+[2020-06-06 08:46:53.628] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:46:53.661] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:46:53.670] Running a serial workload
+[2020-06-06 08:46:53.670] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:46:53.704] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:46:53.937] recheck 1 modified, 0 deleted files
+[2020-06-06 08:46:53.937] modified files:
+[2020-06-06 08:46:53.937] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:46:53.937] Parsing
+[2020-06-06 08:46:53.941] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:46:53.941] Persistent response: lspFromServer None
+[2020-06-06 08:46:53.941] Running a parallel workload
+[2020-06-06 08:46:53.941] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:46:53.973] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:46:53.973] Running a parallel workload
+[2020-06-06 08:46:53.973] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:46:54.002] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:46:54.042] Resolved requires are unchanged
+[2020-06-06 08:46:54.042] Re-resolving directly dependent files
+[2020-06-06 08:46:54.042] Resolved requires are unchanged
+[2020-06-06 08:46:54.042] Recalculating dependency graph
+[2020-06-06 08:46:54.064] Merge prep
+[2020-06-06 08:46:54.064] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:46:54.064] Calculating dependencies
+[2020-06-06 08:46:54.064] Merging
+[2020-06-06 08:46:54.132] Merge skipped 0 of 1 modules
+[2020-06-06 08:46:54.133] Done
+[2020-06-06 08:46:54.133] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:46:54.140] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:47:11.604] Running a serial workload
+[2020-06-06 08:47:11.604] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:47:11.634] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:47:12.106] Persistent request: lspToServer textDocument/didChange
+[2020-06-06 08:47:12.106] Persistent response: lspFromServer None
+[2020-06-06 08:47:12.107] Running a serial workload
+[2020-06-06 08:47:12.107] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:47:12.135] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:47:12.189] Running a serial workload
+[2020-06-06 08:47:12.189] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:47:12.215] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:47:12.313] Persistent request: lspToServer textDocument/didSave
+[2020-06-06 08:47:12.313] Persistent response: lspFromServer None
+[2020-06-06 08:47:12.318] Running a parallel workload
+[2020-06-06 08:47:12.318] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:47:12.345] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:47:12.346] Running a parallel workload
+[2020-06-06 08:47:12.346] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-06 08:47:12.373] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-06 08:47:12.373] recheck 1 modified, 0 deleted files
+[2020-06-06 08:47:12.373] modified files:
+[2020-06-06 08:47:12.373] 1/1: /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-06 08:47:12.373] Parsing
+[2020-06-06 08:47:12.402] Resolved requires are unchanged
+[2020-06-06 08:47:12.402] Re-resolving directly dependent files
+[2020-06-06 08:47:12.402] Resolved requires are unchanged
+[2020-06-06 08:47:12.402] Recalculating dependency graph
+[2020-06-06 08:47:12.427] Merge prep
+[2020-06-06 08:47:12.428] to_merge: Focused: 1, Dependents: 0, Dependencies: 0
+[2020-06-06 08:47:12.428] Calculating dependencies
+[2020-06-06 08:47:12.428] Merging
+[2020-06-06 08:47:12.495] Merge skipped 0 of 1 modules
+[2020-06-06 08:47:12.495] Done
+[2020-06-06 08:47:12.496] Checked set: Focused: 2674, Dependents: 0, Dependencies: 145
+[2020-06-06 08:47:12.502] sending (0 errors) and (warnings from 1 files) to 1 subscribed clients (of 1 total)
+[2020-06-06 08:49:28.548] Running a serial workload
+[2020-06-06 08:49:28.548] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-06 08:49:28.575] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-06 08:49:29.050] Removing persistent connection client #1
+Unhandled exception: End_of_file
+Raised at file "src/core/lwt.ml", line 2999, characters 20-29
+Called from file "src/unix/lwt_main.ml", line 26, characters 8-18
+Called from file "src/server/server.ml", line 214, characters 6-54
+

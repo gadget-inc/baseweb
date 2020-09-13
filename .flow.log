@@ -1,0 +1,115 @@
+[2020-06-15 09:20:42.748] argv=/Users/airhorns/Code/baseweb/node_modules/flow-bin/flow-osx-v0.110.0/flow start --flowconfig-name .flowconfig --autostop --from vscode --temp-dir /tmp/flow /Users/airhorns/Code/baseweb
+[2020-06-15 09:20:42.748] lazy_mode=off
+[2020-06-15 09:20:42.748] arch=classic
+[2020-06-15 09:20:42.748] abstract_locations=off
+[2020-06-15 09:20:42.748] max_workers=12
+[2020-06-15 09:20:42.849] Initializing Server (This might take some time)
+[2020-06-15 09:20:42.865] executable=/Users/airhorns/Code/baseweb/node_modules/flow-bin/flow-osx-v0.110.0/flow
+[2020-06-15 09:20:42.865] version=0.110.0
+[2020-06-15 09:20:42.866] No saved state available
+[2020-06-15 09:20:42.878] Parsing
+[2020-06-15 09:20:46.095] [flow serverWorker 6] File /Users/airhorns/Code/baseweb/node_modules/map-or-similar/map-or-similar.min.gzip.js is malformed
+[2020-06-15 09:20:56.723] [flow serverWorker 2] File /Users/airhorns/Code/baseweb/node_modules/memoizerific/memoizerific.min.gzip.js is malformed
+[2020-06-15 09:21:04.158] Building package heap
+[2020-06-15 09:21:04.513] Loading libraries
+[2020-06-15 09:21:06.395] Resolving dependencies
+[2020-06-15 09:21:08.422] Resolved requires changed
+[2020-06-15 09:21:08.535] Failed to load recheck stats from "/private/tmp/flow/zSUserszSairhornszSCodezSbaseweb.recheck_stats". Reason: "File doesn't exist"
+[2020-06-15 09:21:08.618] to_merge: Focused: 2675, Dependents: 0, Dependencies: 145
+[2020-06-15 09:21:08.618] Calculating dependencies
+[2020-06-15 09:21:08.626] Merging
+[2020-06-15 09:21:26.943] Merge skipped 0 of 2820 modules
+[2020-06-15 09:21:26.947] Done
+[2020-06-15 09:21:26.947] Checked set: Focused: 2675, Dependents: 0, Dependencies: 145
+[2020-06-15 09:21:26.949] Server is READY
+[2020-06-15 09:21:26.949] Took 44.100176 seconds to initialize.
+[2020-06-15 09:21:27.633] Adding new persistent connection #1
+[2020-06-15 09:21:27.634] Running a serial workload
+[2020-06-15 09:21:27.635] Persistent request: subscribe
+[2020-06-15 09:21:27.640] Subscribing client #1 to push diagnostics
+[2020-06-15 09:21:27.640] Persistent response: lspFromServer None
+[2020-06-15 09:21:27.640] Client #1 opened /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-15 09:21:27.640] Running a serial workload
+[2020-06-15 09:21:27.641] Persistent request: lspToServer textDocument/didOpen
+[2020-06-15 09:21:27.641] Persistent response: lspFromServer None
+[2020-06-15 09:21:27.641] Running a serial workload
+[2020-06-15 09:21:27.641] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-15 09:21:27.669] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-15 09:25:11.181] Running a serial workload
+[2020-06-15 09:25:11.181] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-15 09:25:11.210] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-15 09:25:11.211] Running a serial workload
+[2020-06-15 09:25:11.211] Persistent request: lspToServer textDocument/documentHighlight
+[2020-06-15 09:25:11.239] Persistent response: lspFromServer textDocument/documentHighlight
+[2020-06-15 09:25:11.767] Client #1 closed /Users/airhorns/Code/baseweb/src/select/__tests__/select.test.js
+[2020-06-15 09:25:11.767] Running a serial workload
+[2020-06-15 09:25:11.767] Persistent request: lspToServer textDocument/didClose
+[2020-06-15 09:25:11.767] Persistent response: lspFromServer None
+[2020-06-15 09:25:12.677] Client #1 opened /Users/airhorns/Code/baseweb/documentation-site/examples/select/focus.js
+[2020-06-15 09:25:12.677] Running a serial workload
+[2020-06-15 09:25:12.677] Persistent request: lspToServer textDocument/didOpen
+[2020-06-15 09:25:12.678] Persistent response: lspFromServer None
+[2020-06-15 09:25:12.678] Running a serial workload
+[2020-06-15 09:25:12.678] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/documentation-site/examples/select/focus.js
+[2020-06-15 09:25:12.697] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/documentation-site/examples/select/focus.js
+[2020-06-15 09:25:12.697] Client #1 closed /Users/airhorns/Code/baseweb/documentation-site/examples/select/focus.js
+[2020-06-15 09:25:12.697] Running a serial workload
+[2020-06-15 09:25:12.697] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-15 09:25:12.706] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-15 09:25:12.706] Running a serial workload
+[2020-06-15 09:25:12.706] Persistent request: lspToServer $/cancelRequest
+[2020-06-15 09:25:12.706] Persistent response: lspFromServer None
+[2020-06-15 09:25:12.706] Running a serial workload
+[2020-06-15 09:25:12.706] Persistent request: lspToServer textDocument/didClose
+[2020-06-15 09:25:12.706] Persistent response: lspFromServer None
+[2020-06-15 09:25:12.931] Client #1 opened /Users/airhorns/Code/baseweb/src/select/select.js
+[2020-06-15 09:25:12.932] Running a serial workload
+[2020-06-15 09:25:12.932] Persistent request: lspToServer textDocument/didOpen
+[2020-06-15 09:25:12.932] Persistent response: lspFromServer None
+[2020-06-15 09:25:12.932] Running a serial workload
+[2020-06-15 09:25:12.932] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/select.js
+[2020-06-15 09:25:12.945] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/select.js
+[2020-06-15 09:25:12.947] Running a serial workload
+[2020-06-15 09:25:12.947] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-15 09:25:12.955] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-15 09:25:12.955] Client #1 closed /Users/airhorns/Code/baseweb/src/select/select.js
+[2020-06-15 09:25:12.955] Running a serial workload
+[2020-06-15 09:25:12.955] Persistent request: lspToServer textDocument/didClose
+[2020-06-15 09:25:12.955] Persistent response: lspFromServer None
+[2020-06-15 09:25:13.083] Client #1 opened /Users/airhorns/Code/baseweb/documentation-site/examples/input/focus.js
+[2020-06-15 09:25:13.083] Running a serial workload
+[2020-06-15 09:25:13.083] Persistent request: lspToServer textDocument/didOpen
+[2020-06-15 09:25:13.083] Persistent response: lspFromServer None
+[2020-06-15 09:25:13.083] Running a serial workload
+[2020-06-15 09:25:13.083] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/documentation-site/examples/input/focus.js
+[2020-06-15 09:25:13.090] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/documentation-site/examples/input/focus.js
+[2020-06-15 09:25:13.090] Running a serial workload
+[2020-06-15 09:25:13.090] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-15 09:25:13.098] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-15 09:25:13.165] Client #1 closed /Users/airhorns/Code/baseweb/documentation-site/examples/input/focus.js
+[2020-06-15 09:25:13.165] Running a serial workload
+[2020-06-15 09:25:13.165] Persistent request: lspToServer textDocument/didClose
+[2020-06-15 09:25:13.165] Persistent response: lspFromServer None
+[2020-06-15 09:25:13.959] Client #1 opened /Users/airhorns/Code/baseweb/src/select/select-component.js
+[2020-06-15 09:25:13.959] Running a serial workload
+[2020-06-15 09:25:13.959] Persistent request: lspToServer textDocument/didOpen
+[2020-06-15 09:25:13.959] Persistent response: lspFromServer None
+[2020-06-15 09:25:13.959] Running a serial workload
+[2020-06-15 09:25:13.959] Persistent request: liveErrorsRequest file:///Users/airhorns/Code/baseweb/src/select/select-component.js
+[2020-06-15 09:25:14.137] Persistent response: liveErrorsResponse OK (0 errors, 0 warnings) file:///Users/airhorns/Code/baseweb/src/select/select-component.js
+[2020-06-15 09:25:14.137] Client #1 closed /Users/airhorns/Code/baseweb/src/select/select-component.js
+[2020-06-15 09:25:14.137] Running a serial workload
+[2020-06-15 09:25:14.137] Persistent request: lspToServer textDocument/typeCoverage
+[2020-06-15 09:25:14.339] Persistent response: lspFromServer textDocument/typeCoverage
+[2020-06-15 09:25:14.339] Running a serial workload
+[2020-06-15 09:25:14.339] Persistent request: lspToServer textDocument/didClose
+[2020-06-15 09:25:14.339] Persistent response: lspFromServer None
+[2020-06-15 09:25:14.339] Running a serial workload
+[2020-06-15 09:25:14.339] Persistent request: lspToServer $/cancelRequest
+[2020-06-15 09:25:14.339] Persistent response: lspFromServer None
+[2020-06-15 09:25:15.815] Removing persistent connection client #1
+Unhandled exception: End_of_file
+Raised at file "src/core/lwt.ml", line 2999, characters 20-29
+Called from file "src/unix/lwt_main.ml", line 26, characters 8-18
+Called from file "src/server/server.ml", line 214, characters 6-54
+
