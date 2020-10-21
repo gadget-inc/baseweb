@@ -2,11 +2,12 @@
 set -ex
 WORK_DIR="/Users/airhorns/Code/baseweb-hacks-staging"
 SHA=$(git rev-parse --short HEAD)
-yarn build
+# yarn build
 rm -rf $WORK_DIR/*
 cp -r dist/ $WORK_DIR
 cd $WORK_DIR
+git checkout -b build-$SHA
 git add -f .
 git commit -m "Build ${SHA}"
-git push gadget-inc
+git push gadget-inc --force
 echo "Add this sha to package.json: $(git rev-parse HEAD)"
