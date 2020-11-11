@@ -21,6 +21,8 @@ import {
 import {STYLE_TYPE} from './constants.js';
 import {isFocusVisible} from '../utils/focusVisible.js';
 
+const stopPropagation = e => e.stopPropagation();
+
 class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
   static defaultProps: DefaultPropsT = {
     overrides: {},
@@ -247,6 +249,9 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
           disabled={disabled}
           type={type}
           ref={inputRef}
+          // Prevent a second click event from firing when label is clicked.
+          // See https://github.com/uber/baseweb/issues/3847
+          onClick={stopPropagation}
           {...sharedProps}
           {...inputEvents}
           {...getOverrideProps(InputOverride)}

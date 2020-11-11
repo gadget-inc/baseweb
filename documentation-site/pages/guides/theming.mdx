@@ -78,7 +78,7 @@ We provide two themes out of the box, `LightTheme` and `DarkTheme`, which style 
 
 ```js
 import React from 'react';
-import {LightTheme} from 'baseui';
+import {LightTheme, ThemeProvider} from 'baseui';
 
 export default function App() {
   return (
@@ -162,7 +162,7 @@ const theme = createTheme(/* primitives */, /* overrides */);
 
 #### `primitives`
 
-Our theme object has a lot of properties. Most of these properties are assigned to a subset of reoccurring values. We call these reoccurring values, theme building `primitives`. Primitives are made up mostly of colors, (`primary`, `accent`, etc), gradients of those colors (`primary100`, `primary200`, etc) as well as a `primaryFontFamily`. To see the exact shape for `primitives`, reference the [Flow](https://github.com/uber/baseweb/blob/master/src/themes/types.js#L534) or [Typescript](https://github.com/uber/baseweb/blob/master/src/theme.ts#L668) definitions.
+Our theme object has a lot of properties. Most of these properties are assigned to a subset of reoccurring values. We call these reoccurring values, theme building `primitives`. Primitives are made up mostly of colors, (`primary`, `accent`, etc), gradients of those colors (`primary100`, `primary200`, etc) as well as a `primaryFontFamily`. To see the exact shape for `primitives`, reference the [Flow](https://github.com/uber/baseweb/blob/master/src/themes/types.js#L560) or [Typescript](https://github.com/uber/baseweb/blob/master/src/theme.ts#L733) definitions.
 
 These are passed as the first argument to `createTheme`.
 
@@ -345,7 +345,18 @@ You can use any React component as a replacement for an icon, as long as they ac
 - `color`, to set their colors
 - `title`, to set the title of the icon for accessibility purposes
 
-> When creating these replacement components, pay special attention not to expose these properties to the DOM. If you do, you'll run into warning messages similar to this: `Warning: Invalid attribute name: 'size'`
+```
+When creating these replacement components, pay special attention not to expose these properties to the DOM. If you do, you'll run into warning messages similar to this: `Warning: Invalid attribute name: 'size'`
+```
+
+Your component will also recieve the following properties:
+
+- `data-baseweb`, always set to `"icon"`
+- `viewBox`, always set to `"0 0 24 24"`
+- `children`, the `path` elements in our default icons
+- Anything else you pass or override on the component instance
+
+How you handle these properties is up to you — for instance, you might want to omit `viewBox` if your icon set uses something different.
 
 You can find more about the [Icon API here](/components/icon/#icon-api) and also refer to this [list of available icons](https://baseweb.design/components/icon/#available-icons).
 
@@ -653,6 +664,7 @@ Control literal and semantic color values. These differ between light and dark t
 <Color name="contentWarning" />
 <Color name="contentPositive" />
 <Color name="contentOnColor" />
+<Color name="contentOnColorInverse" />
 
 <Color name="borderStateDisabled" />
 <Color name="borderAccent" />

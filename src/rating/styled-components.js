@@ -37,7 +37,7 @@ export const StyledRoot = styled<StyledRootPropsT>('ul', ({$theme}) => {
 
 export const StyledStar = styled<StyledRatingItemPropsT>(
   'li',
-  ({$theme, $isActive, $isSelected, $isFocusVisible, $size}) => {
+  ({$theme, $isActive, $isSelected, $isFocusVisible, $isReadOnly, $size}) => {
     let starStroke = $theme.colors.mono500;
     let starFill = $theme.colors.mono300;
 
@@ -52,14 +52,14 @@ export const StyledStar = styled<StyledRatingItemPropsT>(
       paddingRight: 0,
       display: 'inline-block',
       transition: `transform ${$theme.animation.timing400}`,
-      cursor: 'pointer',
+      cursor: $isReadOnly ? 'default' : 'pointer',
       marginLeft: 0,
       marginTop: 0,
       marginBottom: 0,
       marginRight: $theme.sizing.scale300,
       width: `${$size}px`,
       height: `${$size}px`,
-      transform: $isSelected ? 'scale(1.35)' : '',
+      transform: $isSelected ? 'scale(1.35)' : null,
       outline: $isFocusVisible ? `3px solid ${$theme.colors.accent}` : 'none',
       outlineOffset: '2px',
       ':after': {
@@ -77,7 +77,15 @@ export const StyledStar = styled<StyledRatingItemPropsT>(
 
 export const StyledEmoticon = styled<StyledRatingItemPropsT>(
   'li',
-  ({$theme, $isActive, $isSelected, $index = 1, $isFocusVisible, $size}) => {
+  ({
+    $theme,
+    $isActive,
+    $isSelected,
+    $index = 1,
+    $isFocusVisible,
+    $isReadOnly,
+    $size,
+  }) => {
     let emoticonFill = $theme.colors.mono500;
 
     if ($isActive) {
@@ -99,14 +107,14 @@ export const StyledEmoticon = styled<StyledRatingItemPropsT>(
       paddingBottom: 0,
       display: 'inline-block',
       transition: `transform ${$theme.animation.timing400}`,
-      cursor: 'pointer',
+      cursor: $isReadOnly ? 'default' : 'pointer',
       marginLeft: 0,
       marginTop: 0,
       marginBottom: 0,
       marginRight: $theme.sizing.scale300,
       width: `${$size}px`,
       height: `${$size}px`,
-      transform: $isSelected ? 'scale(1.1)' : '',
+      transform: $isSelected ? 'scale(1.1)' : null,
       outline: $isFocusVisible ? `3px solid ${$theme.colors.accent}` : 'none',
       outlineOffset: '2px',
       ':after': {
