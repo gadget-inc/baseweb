@@ -146,6 +146,7 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
       children,
       required,
       title,
+      ariaLabel,
     } = this.props;
 
     const {
@@ -241,6 +242,7 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
           name={name}
           checked={checked}
           required={required}
+          aria-label={ariaLabel}
           aria-checked={isIndeterminate ? 'mixed' : checked}
           aria-describedby={this.props['aria-describedby']}
           aria-errormessage={this.props['aria-errormessage']}
