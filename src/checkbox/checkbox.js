@@ -121,6 +121,12 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
     });
   };
 
+  onChange = (e: SyntheticInputEvent<HTMLInputElement>) => {
+    ReactDOM.flushSync(() => {
+      this.props.onChange(e);
+    });
+  };
+
   isToggle = () => {
     return (
       this.props.checkmarkType === STYLE_TYPE.toggle ||
@@ -132,7 +138,6 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
     const {checkmarkType} = this.props;
     const {
       overrides = {},
-      onChange,
       labelPlacement = this.isToggle() ? 'left' : 'right',
       inputRef,
       isIndeterminate,
@@ -168,7 +173,7 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
     const ToggleTrack = getOverride(ToggleTrackOverride) || StyledToggleTrack;
 
     const inputEvents = {
-      onChange,
+      onChange: this.onChange,
       onFocus: this.onFocus,
       onBlur: this.onBlur,
     };
