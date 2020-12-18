@@ -43,9 +43,11 @@ export interface FilterProps {
   active?: boolean;
   children: React.ReactNode;
   disabled?: boolean;
+  hasCloseButton?: boolean;
   onReset?: () => any;
   onSelectAll?: () => any;
   overrides?: FilterOverrides;
+  returnFocus?: boolean;
 }
 export const Filter: React.FC<FilterProps>;
 
