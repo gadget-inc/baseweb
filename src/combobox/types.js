@@ -52,6 +52,8 @@ export type PropsT<OptionT = mixed> = {|
   |},
   // Proxies value through to Input component.
   positive?: boolean,
+  // A ref to access the inner Input component.
+  inputRef?: React.ElementRef<*>,
   // Configures the height of input and list item elements.
   size?: $Keys<typeof SIZE>,
   // Initial text provided to the input element.

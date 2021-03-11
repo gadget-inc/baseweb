@@ -378,4 +378,25 @@ describe('combobox', () => {
     const closed = container.querySelector('ul');
     expect(closed).toBeNull();
   });
+
+  it('forwards inputRef from props', () => {
+    const inputRef = React.createRef();
+    const {container} = render(
+      <Combobox
+        autocomplete={false}
+        mapOptionToString={o => o}
+        onChange={() => {}}
+        options={options}
+        value={''}
+        inputRef={inputRef}
+      />,
+      {container: document.body},
+    );
+
+    expect(inputRef.current).toBeDefined();
+    // $FlowFixMe
+    inputRef.current.focus();
+    const inputNode = container.querySelector('input');
+    expect(inputNode).toBe(document.activeElement);
+  });
 });
