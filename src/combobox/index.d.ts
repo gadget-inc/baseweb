@@ -30,6 +30,7 @@ export type PropsT<OptionT = unknown> = {
   onSubmit?: (params: {closeListbox: () => void; value: string}) => any;
   options: OptionT;
   overrides?: ComboboxOverrides;
+  inputRef?: React.Ref<HTMLInputElement>;
   size?: SIZE[keyof SIZE];
   value: string;
 };
