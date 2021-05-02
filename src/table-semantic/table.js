@@ -19,11 +19,11 @@ import {
   StyledTableLoadingMessage,
   StyledTableEmptyMessage,
 } from './styled-components.js';
-import {getOverrides} from '../helpers/overrides.js';
+import {getOverrides, withOverrides} from '../helpers/overrides.js';
 
 import type {TablePropsT} from './types.js';
 
-export default class Table extends React.Component<TablePropsT> {
+class Table extends React.Component<TablePropsT> {
   static defaultProps = {
     columns: [],
     data: [[]],
@@ -157,3 +157,6 @@ export default class Table extends React.Component<TablePropsT> {
     );
   }
 }
+
+//$FlowFixMe
+export default withOverrides(Table, 'Table');

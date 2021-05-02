@@ -6,7 +6,7 @@ LICENSE file in the root directory of this source tree.
 */
 // @flow
 import * as React from 'react';
-import {getOverrides} from '../helpers/overrides.js';
+import {getOverrides, withOverrides} from '../helpers/overrides.js';
 import {Tab as StyledTab} from './styled-components.js';
 import {isFocusVisible, forkFocus, forkBlur} from '../utils/focusVisible.js';
 
@@ -99,4 +99,5 @@ class TabComponent extends React.Component<
   }
 }
 
-export default TabComponent;
+//$FlowFixMe
+export default withOverrides(TabComponent, 'Tab');

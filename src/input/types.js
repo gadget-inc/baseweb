@@ -63,7 +63,7 @@ export type SharedPropsT = {|
 
 export type PropsT = *;
 
-export type BaseInputComponentsT = {|
+export type BaseInputComponentsT = {
   InputContainer?: OverrideT,
   Input?: OverrideT,
   Before?: OverrideT,
@@ -73,14 +73,14 @@ export type BaseInputComponentsT = {|
   MaskToggleButton?: OverrideT,
   MaskToggleShowIcon?: OverrideT,
   MaskToggleHideIcon?: OverrideT,
-|};
+};
 
-export type InputComponentsT = {|
+export type InputComponentsT = {
   ...BaseInputComponentsT,
   Root?: OverrideT,
   StartEnhancer?: OverrideT,
   EndEnhancer?: OverrideT,
-|};
+};
 
 export type BaseInputPropsT<T> = {|
   'aria-activedescendant'?: string,
@@ -88,6 +88,8 @@ export type BaseInputPropsT<T> = {|
   'aria-controls'?: string,
   /** Id of element which contains a related error message */
   'aria-errormessage'?: string,
+  /** Sets aria-haspopup attribute. */
+  'aria-haspopup'?: string,
   /** Sets aria-label attribute. */
   'aria-label'?: string,
   /** Sets aria-labelledby attribute. */
@@ -132,6 +134,8 @@ export type BaseInputPropsT<T> = {|
   placeholder?: string,
   /** Renders component in 'required' state. */
   required: boolean,
+  /** Input role attribute. */
+  role?: string,
   /** Renders component in provided size. */
   size: SizeT,
   /** Input type attribute. */

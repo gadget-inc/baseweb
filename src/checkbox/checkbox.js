@@ -7,7 +7,11 @@ LICENSE file in the root directory of this source tree.
 // @flow
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {getOverride, getOverrideProps} from '../helpers/overrides.js';
+import {
+  getOverride,
+  getOverrideProps,
+  withOverrides,
+} from '../helpers/overrides.js';
 import type {PropsT, DefaultPropsT, StatelessStateT} from './types.js';
 import {
   Checkmark as StyledCheckmark,
@@ -137,7 +141,6 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
   render() {
     const {checkmarkType} = this.props;
     const {
-      overrides = {},
       labelPlacement = this.isToggle() ? 'left' : 'right',
       inputRef,
       isIndeterminate,
@@ -152,6 +155,7 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
       required,
       title,
       ariaLabel,
+      overrides = {},
     } = this.props;
 
     const {
@@ -270,4 +274,5 @@ class StatelessCheckbox extends React.Component<PropsT, StatelessStateT> {
   }
 }
 
-export default StatelessCheckbox;
+//$FlowFixMe
+export default withOverrides(StatelessCheckbox, 'Checkbox');

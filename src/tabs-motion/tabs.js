@@ -12,7 +12,7 @@ LICENSE file in the root directory of this source tree.
 import * as React from 'react';
 import {useUID} from 'react-uid';
 import {useStyletron} from '../styles/index.js';
-import {getOverrides} from '../helpers/overrides.js';
+import {getOverrides, withOverrides} from '../helpers/overrides.js';
 import {isFocusVisible, forkFocus, forkBlur} from '../utils/focusVisible.js';
 import {ORIENTATION, FILL} from './constants.js';
 import {
@@ -65,7 +65,36 @@ const getLayoutParams = (el, orientation) => {
   }
 };
 
-export function Tabs({
+const scrollParentToCentreTarget = targetNode => {
+  const {
+    x: parentX,
+    y: parentY,
+    width: parentWidth,
+    height: parentHeight,
+  } = targetNode.parentNode.getBoundingClientRect();
+  const {
+    x: childX,
+    y: childY,
+    width: childWidth,
+    height: childHeight,
+  } = targetNode.getBoundingClientRect();
+
+  // get the position of the child centre, relative to parent
+  const childCentre = {
+    x: childX - parentX + childWidth / 2,
+    y: childY - parentY + childHeight / 2,
+  };
+  // aim for the centre of the child to be the centre of the parent
+  const {scrollLeft, scrollTop} = targetNode.parentNode;
+  const target = {
+    x: scrollLeft + childCentre.x - parentWidth / 2,
+    y: scrollTop + childCentre.y - parentHeight / 2,
+  };
+  // ignore out of bounds, the browser will manage this for us
+  targetNode.parentNode.scroll(target.x, target.y);
+};
+
+function Tabs({
   activeKey = '0',
   disabled = false,
   children,
@@ -146,10 +175,7 @@ export function Tabs({
             inline: 'nearest',
           });
         } else {
-          activeTabRef.current.scrollIntoView({
-            block: 'center',
-            inline: 'center',
-          });
+          scrollParentToCentreTarget(activeTabRef.current);
         }
       }
     }
@@ -482,3 +508,8 @@ function InternalTabPanel({
     </TabPanel>
   );
 }
+
+// $FlowFixMe
+const tabsMotion = withOverrides(Tabs, 'TabsMotion');
+
+export {tabsMotion as Tabs};

@@ -21,7 +21,13 @@ import {ThemeContext} from './theme-provider.js';
 const wrapper = StyledComponent => {
   return React.forwardRef((props, ref) => (
     <ThemeContext.Consumer>
-      {theme => <StyledComponent ref={ref} {...props} $theme={theme} />}
+      {themeAndOverrides => (
+        <StyledComponent
+          ref={ref}
+          {...props}
+          $theme={themeAndOverrides.theme}
+        />
+      )}
     </ThemeContext.Consumer>
   ));
 };
@@ -95,7 +101,7 @@ type UseStyletronFn<Theme> = () => [(StyleObject) => string, Theme];
 export function createThemedUseStyletron<Theme>(): UseStyletronFn<Theme> {
   return function() {
     // eslint-disable-next-line flowtype/no-weak-types
-    const theme = ((React.useContext(ThemeContext): any): Theme);
+    const theme = ((React.useContext(ThemeContext).theme: any): Theme);
     const [css] = styletronUseStyletron();
     return [css, theme];
   };
@@ -118,7 +124,13 @@ export function withWrapper(
     Styled => {
       return React.forwardRef((props, ref) => (
         <ThemeContext.Consumer>
-          {theme => wrapperFn(Styled)({ref: ref, ...props, $theme: theme})}
+          {({theme}) =>
+            wrapperFn(Styled)({
+              ref: ref,
+              ...props,
+              $theme: theme,
+            })
+          }
         </ThemeContext.Consumer>
       ));
     },

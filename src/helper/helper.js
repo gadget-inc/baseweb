@@ -10,12 +10,12 @@ LICENSE file in the root directory of this source tree.
 import * as React from 'react';
 
 import {Popover, PLACEMENT} from '../popover/index.js';
-import {mergeOverrides} from '../helpers/overrides.js';
+import {mergeOverrides, withOverrides} from '../helpers/overrides.js';
 
 import {StyledArrow, StyledBody} from './styled-components.js';
 import type {PropsT} from './types.js';
 
-export function Helper(props: PropsT) {
+function Helper(props: PropsT) {
   const {overrides = {}, placement, ...restProps} = props;
 
   const mergedOverrides = mergeOverrides(
@@ -42,7 +42,13 @@ export function Helper(props: PropsT) {
 }
 
 Helper.defaultProps = {
+  // $FlowFixMe
   ...Popover.defaultProps,
   placement: PLACEMENT.bottom,
   showArrow: true,
 };
+
+// $FlowFixMe
+let helper = withOverrides(Helper, 'Helper');
+
+export {helper as Helper};

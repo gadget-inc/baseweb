@@ -11,7 +11,7 @@ import * as React from 'react';
 import FocusLock from 'react-focus-lock';
 
 import {LocaleContext} from '../locale/index.js';
-import {getOverrides} from '../helpers/overrides.js';
+import {getOverrides, withOverrides} from '../helpers/overrides.js';
 import {Layer} from '../layer/index.js';
 import {SIZE, ROLE, CLOSE_SOURCE} from './constants.js';
 import {
@@ -39,6 +39,7 @@ class Modal extends React.Component<ModalPropsT, ModalStateT> {
     autofocus: null,
     autoFocus: true,
     focusLock: true,
+    returnFocus: true,
     closeable: true,
     isOpen: false,
     overrides: {},
@@ -269,6 +270,7 @@ class Modal extends React.Component<ModalPropsT, ModalStateT> {
       autofocus,
       autoFocus,
       focusLock,
+      returnFocus,
     } = this.props;
 
     const {
@@ -318,7 +320,7 @@ class Modal extends React.Component<ModalPropsT, ModalStateT> {
         {locale => (
           <FocusLock
             disabled={!focusLock}
-            returnFocus
+            returnFocus={returnFocus}
             // eslint-disable-next-line jsx-a11y/no-autofocus
             autoFocus={autofocus !== null ? autofocus : autoFocus}
           >
@@ -398,4 +400,5 @@ class Modal extends React.Component<ModalPropsT, ModalStateT> {
   }
 }
 
-export default Modal;
+//$FlowFixMe
+export default withOverrides(Modal, 'Modal');

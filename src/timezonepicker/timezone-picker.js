@@ -15,7 +15,11 @@ import {
 } from 'timezone-support/dist/index-1900-2050.js';
 import {formatZonedTime} from 'timezone-support/dist/parse-format.js';
 
-import {getOverrides, mergeOverrides} from '../helpers/overrides.js';
+import {
+  getOverrides,
+  mergeOverrides,
+  withOverrides,
+} from '../helpers/overrides.js';
 import {LocaleContext} from '../locale/index.js';
 import {Select} from '../select/index.js';
 
@@ -148,4 +152,5 @@ class TimezonePicker extends React.Component<
   }
 }
 
-export default TimezonePicker;
+//$FlowFixMe
+export default withOverrides(TimezonePicker, 'TimezonePicker');

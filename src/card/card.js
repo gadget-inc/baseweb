@@ -8,7 +8,11 @@ LICENSE file in the root directory of this source tree.
 /* @flow */
 
 import * as React from 'react';
-import {getOverride, getOverrideProps} from '../helpers/overrides.js';
+import {
+  getOverride,
+  getOverrideProps,
+  withOverrides,
+} from '../helpers/overrides.js';
 import {
   Action as StyledAction,
   Body as StyledBody,
@@ -27,16 +31,15 @@ export function hasThumbnail(props: {+thumbnail?: string}) {
 
 function Card(props: CardsPropsT) {
   const {
+    overrides = {},
     action,
     children,
     hasThumbnail,
     headerImage,
     thumbnail: thumbnailSrc,
     title,
-    overrides,
     ...restProps
   } = props;
-
   const {
     Action: ActionOverride,
     Body: BodyOverride,
@@ -102,4 +105,5 @@ Card.defaultProps = {
   overrides: {},
 };
 
-export default Card;
+//$FlowFixMe
+export default withOverrides(Card, 'Card');

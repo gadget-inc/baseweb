@@ -8,7 +8,7 @@ LICENSE file in the root directory of this source tree.
 /* eslint-disable cup/no-undef */
 import * as React from 'react';
 
-import {getOverrides} from '../helpers/overrides.js';
+import {getOverrides, withOverrides} from '../helpers/overrides.js';
 import DeleteAlt from '../icon/delete-alt.js';
 import TriangleDownIcon from '../icon/triangle-down.js';
 import SearchIconComponent from '../icon/search.js';
@@ -1071,4 +1071,5 @@ class Select extends React.Component<PropsT, SelectStateT> {
   }
 }
 
-export default Select;
+//$FlowFixMe
+export default withOverrides(Select, 'Select');

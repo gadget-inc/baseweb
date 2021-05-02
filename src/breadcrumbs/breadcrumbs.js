@@ -20,10 +20,14 @@ import {
   StyledList,
   StyledListItem,
 } from './styled-components.js';
-import {getOverrides, mergeOverrides} from '../helpers/overrides.js';
+import {
+  getOverrides,
+  withOverrides,
+  mergeOverrides,
+} from '../helpers/overrides.js';
 
 export function Breadcrumbs(props: BreadcrumbsPropsT) {
-  const {overrides = {}, showTrailingSeparator = false} = props;
+  const {showTrailingSeparator = false, overrides = {}} = props;
   const childrenArray = Children.toArray(props.children);
   const childrenWithSeparators = [];
 
@@ -59,7 +63,7 @@ export function Breadcrumbs(props: BreadcrumbsPropsT) {
         {(showTrailingSeparator || index !== childrenArray.length - 1) && (
           <Separator {...baseSeparatorProps} key={`separator-${index}`}>
             <ThemeContext.Consumer>
-              {theme =>
+              {({theme}) =>
                 theme.direction === 'rtl' ? (
                   <Left {...baseIconProps} />
                 ) : (
@@ -93,4 +97,5 @@ Breadcrumbs.defaultProps = {
   showTrailingSeparator: false,
 };
 
-export default Breadcrumbs;
+//$FlowFixMe
+export default withOverrides(Breadcrumbs, 'Breadcrumbs');
