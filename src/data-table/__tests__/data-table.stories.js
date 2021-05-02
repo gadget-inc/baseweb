@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018-2020 Uber Technologies, Inc.
+Copyright (c) Uber Technologies, Inc.
 
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
@@ -32,6 +32,7 @@ import DataTableRowActions from './data-table-row-actions.scenario.js';
 import DataTableRowHeight from './data-table-row-height.scenario.js';
 import DataTableTextSearch from './data-table-text-search.scenario.js';
 import DataTableDefault from './data-table.scenario.js';
+import DataTableRtl from './data-table-rtl.scenario.js';
 
 export const AddRemoveColumns = () => <DataTableAddRemoveColumns />;
 export const BatchAction = () => <DataTableBatchAction />;
@@ -58,3 +59,4 @@ export const RowActions = () => <DataTableRowActions />;
 export const RowHeight = () => <DataTableRowHeight />;
 export const TextSearch = () => <DataTableTextSearch />;
 export const DataTable = () => <DataTableDefault />;
+export const TestRtl = () => <DataTableRtl />;

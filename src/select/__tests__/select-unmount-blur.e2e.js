@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018-2020 Uber Technologies, Inc.
+Copyright (c) Uber Technologies, Inc.
 
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
@@ -11,7 +11,7 @@ const {mount} = require('../../../e2e/helpers');
 
 describe('select unmount blur', () => {
   it('onBlur callback properly handles unmounted component', async () => {
-    await mount(page, 'select-unmount-blur');
+    await mount(page, 'select--unmount-blur');
     await page.click('button');
     await page.waitForSelector('[data-testid="select-container"]');
     await page.click('input');

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018-2020 Uber Technologies, Inc.
+Copyright (c) Uber Technologies, Inc.
 
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
@@ -470,7 +470,7 @@ class Popover extends React.Component<PopoverPropsT, PopoverPrivateStateT> {
                 noFocusGuards={false}
                 // see popover-focus-loop.scenario.js for why hover cannot return focus
                 returnFocus={this.props.returnFocus && !this.isHoverTrigger()}
-                autoFocus={this.state.autoFocusAfterPositioning} // eslint-disable-line jsx-a11y/no-autofocus
+                autoFocus={this.state.autoFocusAfterPositioning}
               >
                 {this.renderPopover(renderedContent)}
               </FocusLock>

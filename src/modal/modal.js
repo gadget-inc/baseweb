@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018-2020 Uber Technologies, Inc.
+Copyright (c) Uber Technologies, Inc.
 
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
@@ -39,6 +39,7 @@ class Modal extends React.Component<ModalPropsT, ModalStateT> {
     autofocus: null,
     autoFocus: true,
     focusLock: true,
+    returnFocus: true,
     closeable: true,
     isOpen: false,
     overrides: {},
@@ -269,6 +270,7 @@ class Modal extends React.Component<ModalPropsT, ModalStateT> {
       autofocus,
       autoFocus,
       focusLock,
+      returnFocus,
     } = this.props;
 
     const {
@@ -318,8 +320,7 @@ class Modal extends React.Component<ModalPropsT, ModalStateT> {
         {locale => (
           <FocusLock
             disabled={!focusLock}
-            returnFocus
-            // eslint-disable-next-line jsx-a11y/no-autofocus
+            returnFocus={returnFocus}
             autoFocus={autofocus !== null ? autofocus : autoFocus}
           >
             <Root

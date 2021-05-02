@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018-2020 Uber Technologies, Inc.
+Copyright (c) Uber Technologies, Inc.
 
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
@@ -40,9 +40,9 @@ export const RangeHighlight = () => <DatepickerRangeHighlight />;
 export const RangeMultiMonth = () => <DatepickerRangeMultiMonth />;
 export const Range = () => <DatepickerRange />;
 export const Datepicker = () => <DatepickerDefault />;
-export const sColorStates = () => <DatepickersColorStates />;
-export const sComposedRange = () => <DatepickersComposedRange />;
-export const sComposedSingle = () => <DatepickersComposedSingle />;
+export const StatefulColorStates = () => <DatepickersColorStates />;
+export const StatefulComposedRange = () => <DatepickersComposedRange />;
+export const StatefulComposedSingle = () => <DatepickersComposedSingle />;
 export const StatefulCalendarOverrides = () => (
   <StatefulCalendarOverridesScenario />
 );

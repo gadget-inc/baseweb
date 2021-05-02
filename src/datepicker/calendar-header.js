@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2018-2020 Uber Technologies, Inc.
+Copyright (c) Uber Technologies, Inc.
 
 This source code is licensed under the MIT license found in the
 LICENSE file in the root directory of this source tree.
@@ -212,6 +212,7 @@ export default class CalendarHeader<T = Date> extends React.Component<
         $isFocusVisible={this.state.isFocusVisible}
         type="button"
         $disabled={isDisabled}
+        $order={this.props.order}
         {...prevButtonProps}
       >
         {isHidden ? null : (
@@ -284,6 +285,7 @@ export default class CalendarHeader<T = Date> extends React.Component<
         type="button"
         $disabled={isDisabled}
         $isFocusVisible={this.state.isFocusVisible}
+        $order={this.props.order}
         {...nextButtonProps}
       >
         {isHidden ? null : (
@@ -398,7 +400,6 @@ export default class CalendarHeader<T = Date> extends React.Component<
     ) : (
       <OverriddenPopover
         placement="bottom"
-        // eslint-disable-next-line jsx-a11y/no-autofocus
         autoFocus={true}
         focusLock={true}
         isOpen={this.state.isMonthYearDropdownOpen}
